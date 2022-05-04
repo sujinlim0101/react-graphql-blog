@@ -1,0 +1,39 @@
+.feed {
+  margin: 16px 0;
+  padding: 12px 0;
+  border-radius: 16px;
+  background-color: #f7f7f7;
+  list-style: none;
+  border: 1px solid #d3d3d3;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.itemText {
+  display: block;
+  padding: 0 16px;
+}
+.time {
+  margin-left: 12px;
+  color: #666;
+  font-size: 12px;
+}
+.btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+}
+.editBtn, .deleteBtn {
+  padding: 6px;
+  font-size: 12px;
+  color: #444;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background: #eee;
+}
+.hr {
+  border-top: 1px solid #eee;
+  padding: 7px;
+}

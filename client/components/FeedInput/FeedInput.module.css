@@ -1,0 +1,25 @@
+.formConainer {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+}
+.feedTextarea {
+  max-width: 600px;
+  margin: 0 autos;
+}
+.feedInputBtnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7px;
+  padding-top: 8px;
+}
+.feedInputBtn {
+  padding: 7px 10px;
+  border: 1px solid #fff;
+  border-radius: 14px;
+  background: #7ec0f7;
+}
+.feedInputBtn:disabled {
+  background: #a2d5ff;
+}

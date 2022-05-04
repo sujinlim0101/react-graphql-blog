@@ -1,0 +1,47 @@
+Arguments: 
+  /opt/homebrew/Cellar/node@16/16.13.2/bin/node /opt/homebrew/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js
+
+PATH: 
+  /opt/homebrew/opt/node@16/bin:/usr/local/opt/node@16/bin:/opt/homebrew/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/sujinlim/Documents/react-graphql/server/package.json: Unexpected token } in JSON at position 288
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:310:30)
+      at /opt/homebrew/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.3",
+      "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.15"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
