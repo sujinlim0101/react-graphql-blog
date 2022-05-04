@@ -29,6 +29,7 @@
   },
   "scripts": {
     "start": "next",
+    "build": "next build",
     "lint": "eslint --cache \"./**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --cache --fix \"src/**/*.{js,jsx,ts,tsx}\""
   }

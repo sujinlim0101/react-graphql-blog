@@ -16,7 +16,7 @@ const FeedList = ({ sfeeds }) => {
   const client = useQueryClient();
   const { query } = useRouter();
   const userId = query.userId || query.userid || "";
-  const [feeds, setFeeds] = useState([{ feeds: sfeeds }]);
+  const [feedList, setFeedList] = useState([{ feeds: sfeeds }]);
   const [editingId, setEditingId] = useState(null);
   const moreRef = useRef(null);
   const intersecting = useInfiniteScroll(moreRef);
@@ -74,7 +74,7 @@ const FeedList = ({ sfeeds }) => {
 
   useEffect(() => {
     if (!data?.pages) return
-    setFeeds(data.pages)
+    setFeedList(data.pages)
   }, [data?.pages])
 
   if (isError) {
@@ -85,12 +85,11 @@ const FeedList = ({ sfeeds }) => {
     if (intersecting && hasNextPage) fetchNextPage()
   }, [intersecting, hasNextPage])
 
-
   return (
     <>
       {userId && <FeedInput mutate={onCreate} />}
       <ul className={styles.list}>
-        {feeds.map(({ feeds }, pageIndex) =>
+        {feedList.map(({ feeds }, pageIndex) =>
           feeds.map(x => (
             <div>
               <FeedItem
